@@ -323,7 +323,7 @@ export async function getProduct(handle: string): Promise<Product | undefined> {
       handle
     }
   });
-
+  console.log(res.body.data.product);
   return reshapeProduct(res.body.data.product, false);
 }
 
